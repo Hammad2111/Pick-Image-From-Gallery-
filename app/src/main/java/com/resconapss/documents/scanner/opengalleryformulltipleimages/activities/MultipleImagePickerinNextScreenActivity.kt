@@ -11,19 +11,19 @@ import com.resconapss.documents.scanner.opengalleryformulltipleimages.screen.Mul
 import com.resconapss.documents.scanner.opengalleryformulltipleimages.screen.ShowinnextScreen
 import com.resconapss.documents.scanner.opengalleryformulltipleimages.screen.ViewPagerScreen
 
-class ShowMultipleImageinViewPagerActivity : ComponentActivity() {
+class MultipleImagePickerinNextScreenActivity : ComponentActivity() {
     @OptIn(ExperimentalPermissionsApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContent {
-        ViewPagerScreen()
+       ShowinnextScreen(context = this)
         }
     }
     @Preview(showBackground = true, device = Devices.PIXEL_4_XL)
     @Composable
     fun show_preview()
     {
-       ViewPagerScreen()
+        ShowinnextScreen(context = this)
     }
 }

@@ -23,6 +23,7 @@ import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.resconapss.documents.scanner.opengalleryformulltipleimages.activities.MultipleImagePickerActivity
+import com.resconapss.documents.scanner.opengalleryformulltipleimages.activities.MultipleImagePickerinNextScreenActivity
 import com.resconapss.documents.scanner.opengalleryformulltipleimages.activities.ShowMultipleImageinViewPagerActivity
 import com.resconapss.documents.scanner.opengalleryformulltipleimages.activities.SingleImagePickerActivity
 
@@ -92,6 +93,26 @@ fun HomeScreen( context:Activity) {
             ) {
                 Text(text = "Multiple Photo in view pager")
             }
+
+            Spacer(modifier = Modifier
+                .fillMaxWidth()
+                .height(10.dp))
+            Button( modifier = Modifier
+                .fillMaxWidth()
+                .height(70.dp)
+                .padding(10.dp)
+                .align(Alignment.CenterHorizontally),
+                onClick = {
+
+                    val intent= Intent(context, MultipleImagePickerinNextScreenActivity::class.java)
+                    context.startActivity(intent)
+
+
+                }
+            ) {
+                Text(text = "Show Photo in next Screen")
+            }
+
 
 
 

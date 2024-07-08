@@ -25,6 +25,19 @@
             android:label="@string/app_name"
             android:theme="@style/Theme.OpengalleryForMulltipleImages">
         </activity>
+        <activity
+            android:name=".activities.ShowImagePagerActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.OpengalleryForMulltipleImages">
+        </activity>
+
+        <activity
+            android:name=".activities.MultipleImagePickerinNextScreenActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.OpengalleryForMulltipleImages">
+        </activity>
 
         <activity
             android:name=".activities.MultipleImagePickerActivity"
